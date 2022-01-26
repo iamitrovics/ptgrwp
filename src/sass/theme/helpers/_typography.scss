@@ -1,0 +1,121 @@
+// Import fonts and fonts variables
+
+// Import fonts
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$font-main:'Roboto';
+$font-regular:'Roboto Regular';
+$font-bold:'Roboto Bold';
+$font-medium:'Roboto Medium';
+$font-heading:'Poppins Medium';
+$font-heading-bold:'Poppins Bold';
+
+body { 
+	font: {
+		size:$base-size;
+		family: $font-main;
+	}
+	-webkit-text-size-adjust: 100%;  //fix for iOS
+	overflow-x:hidden;    
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: normal;
+    line-height: 32px;
+    @media only screen and (min-width : 1200px) and (max-width:1439px)  {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    @media screen and (max-width:1024px) {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    a {
+        &:hover {
+        }
+    }    
+    strong {
+        font-family: $font-medium;
+    }
+}
+
+ul {
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+}
+
+small {
+    font-size: 0.875em;
+}
+
+address {
+    padding:0px;
+    margin:0px;
+}
+
+a {
+    @include animate-fade;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+    color:$color-heading;
+    line-height: 1.1;
+}
+
+img {
+	height: auto;
+    display: block;
+}

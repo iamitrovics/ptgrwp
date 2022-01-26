@@ -1,0 +1,274 @@
+// Cotnact page
+#contact-page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include breakpoint(desktop) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include breakpoint(laptop) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include breakpoint(tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include breakpoint(mobile-all) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contact-intro {
+        h2 {
+            @include block-title;
+            margin-bottom: 20px;
+            @include breakpoint(laptop) {
+                margin-bottom: 30px;
+            }
+            @include breakpoint(tablet) {
+                margin-bottom: 30px;
+            }
+            @include breakpoint(mobile-all) {
+                margin-bottom: 25px;
+                width: 80%;
+            }
+        }
+        .socials {
+            padding-top: 40px;
+            @include breakpoint(tablet) {
+                padding-bottom: 40px;
+            }
+            @include breakpoint(mobile-all) {
+                padding-bottom: 40px;
+            }
+            ul {
+                li {
+                    margin-right: 20px;
+                    display: inline-block;
+                    @include breakpoint(mobile-all) {
+                        margin-right: 15px;
+                    }
+                    a {
+                        font-size: 40px;
+                        @include breakpoint(mobile-all) {
+                            font-size: 32px;
+                        }
+                        color:$black;
+                        &:hover {
+                            color:$color-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-form {
+        padding-left: 30px;
+        @include breakpoint(laptop) {
+            padding-left: 0px;
+        }
+        @include breakpoint(tablet) {
+            padding-left: 0px;
+        }
+        @include breakpoint(mobile-all) {
+            padding-left: 0px;
+        }
+        .wpcf7 form .wpcf7-response-output {
+            border:none;
+            padding:0px;
+            color:red;
+            font-size: 14px;
+            font-family: $font-medium;
+        }        
+        .form-block {
+            margin-bottom: 30px;
+            .wpcf7-not-valid-tip {
+                font-size: 14px;
+                display: block;
+                padding-top: 3px;
+            }
+            .wpcf7-not-valid {
+                background: #fff3f3!important;
+            }
+            input, textarea {
+                width: 100%;
+                background: #ebebeb;
+                height: 72px;
+                line-height: 72px;
+                padding-left: 25px;
+                font-size: 18px;
+                border:none;
+                font-family: $font-main;
+                @include breakpoint(laptop) {
+                    height: 62px;
+                    line-height: 62px;
+                }
+                @include breakpoint(tablet) {
+                    height: 62px;
+                    line-height: 62px;                    
+                }
+                @include breakpoint(mobile-all) {
+                    height: 62px;
+                    line-height: 62px;                      
+                }
+                &:focus {
+                    outline: 0;
+                    background:#ddd;
+                }
+            }
+            .wpcf7-phonetext  {
+                padding-left: 80px;
+            }
+            .iti-flag {
+                left:20px;
+            }
+            .selected-flag {
+                width: 66px;
+            }
+            textarea {
+                height: 220px;
+                line-height: 30px;
+                padding-top: 25px;
+                @include breakpoint(tablet) {
+                    height: 150px;
+                }
+                @include breakpoint(mobile-all) {
+                    height: 180px;
+                }
+            }
+        }
+        footer {
+            input {
+                @include btn-cta;
+                border:none;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// Info
+#contact-info {
+    background:$color-gray-bg;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    @include breakpoint(desktop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include breakpoint(laptop) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    @include breakpoint(tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include breakpoint(mobile-all) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .contact-card {
+        text-align: center;
+        @include breakpoint(tablet) {
+            margin-bottom: 30px;
+        }
+        @include breakpoint(mobile-all) {
+            margin-bottom: 15px;
+        }
+        .info-header {
+            padding-bottom: 50px;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1a4068+0,1c4a78+100 */
+            background: #1a4068; /* Old browsers */
+            background: -moz-linear-gradient(left,  #1a4068 0%, #1c4a78 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  #1a4068 0%,#1c4a78 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  #1a4068 0%,#1c4a78 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a4068', endColorstr='#1c4a78',GradientType=1 ); /* IE6-9 */
+            text-align: center;
+            .icon {
+                height: 180px;
+                position: relative;
+                @include breakpoint(desktop) {
+                    height: 170px;
+                }
+                @include breakpoint(laptop) {
+                    height: 150px;
+                }
+                @include breakpoint(tablet) {
+                    height: 140px;
+                }
+                @include breakpoint(mobile-all) {
+                    height: 180px;
+                }
+                img {
+                    @include centre(both);
+                    width: 80px;
+                    @include breakpoint(laptop) {
+                        width: 60px;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 64px;
+                    }
+                    @include breakpoint(mobile-all) {
+                        width: 72px;
+                    }
+                }
+            }
+            span.label {
+                color:$white;
+                font-size: 22px;
+                @include breakpoint(laptop) {
+                    font-size: 18px;
+                }
+                @include breakpoint(tablet) {
+                    font-size: 18px;
+                }
+                @include breakpoint(mobile-all) {
+                    font-size: 18px;
+                }
+            }
+        }
+        .contact-text {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background: $color-blue-dark;
+            @include breakpoint(laptop) {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+            @include breakpoint(tablet) {
+                padding-top: 22px;
+                padding-bottom: 22px;
+            }
+            @include breakpoint(mobile-all) {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+            span.title {
+                color:$white;
+                font-size: 18px;
+                line-height: 24px;
+                font-family: $font-bold;
+                @include breakpoint(laptop) {
+                    font-size: 13px;
+                    line-height: 2px;
+                }
+                @include breakpoint(tablet) {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                @include breakpoint(mobile-all) {
+                    font-size: 16px;
+                }
+                a {
+                    color:$white;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
