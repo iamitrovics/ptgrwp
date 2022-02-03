@@ -145,6 +145,8 @@
 
 <?php wp_footer(); ?>
 
+	<script src="//code.tidio.co/e45oxgnvvcelz83gng4xilymwlqms86d.js"></script>
+
 	<script src="<?php bloginfo('template_directory'); ?>/js/vidbg.js"></script>
 
 	<script>
@@ -155,6 +157,8 @@
 	)
 	wow.init();
 	</script>
+
+
 
 </body>
 </html>

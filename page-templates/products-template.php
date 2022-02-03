@@ -34,12 +34,12 @@ get_header();
     </div>
     <!-- // breadcrumb  -->	
 
-    <div id="products-intro">
+    <div class="products-intro">
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-5 col-md-6">
-                    <div class="intro-content">
+                <div class="col-lg-6 col-md-6">
+                    <div class="intro-content pad-right">
                         <h2><?php the_field('custom_title_products_funds'); ?></h2>
                         <?php the_field('content_block_prod_intro'); ?>
                         <a href="<?php the_field('button_link_prod_intro'); ?>" class="btn-cta"><?php the_field('button_label_prod_intro'); ?></a>
@@ -47,7 +47,7 @@ get_header();
                 </div>
                 <!-- // col  -->
 
-                <div class="col-lg-6 offset-lg-1 col-md-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="image-holder">
                     <?php
                     $imageID = get_field('featured_image_prod_page');
@@ -66,6 +66,39 @@ get_header();
         <!-- // container  -->
     </div>
     <!-- // intro  -->
+
+    <div class="products-intro">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="image-holder">
+                    <?php
+                    $imageID = get_field('featured_image_prod_page_twenty');
+                    $image = wp_get_attachment_image_src( $imageID, 'half-image' );
+                    $alt_text = get_post_meta($imageID , '_wp_attachment_image_alt', true);
+                    ?> 
+
+                    <img class="img-responsive" alt="<?php echo $alt_text; ?>" src="<?php echo $image[0]; ?>" /> 
+                    </div>
+                </div>
+                <!-- // image  -->
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="intro-content pad-left">
+                        <h2><?php the_field('custom_title_products_funds_twenty'); ?></h2>
+                        <?php the_field('content_block_prod_intro_twenty'); ?>
+                        <a href="<?php the_field('button_link_prod_intro_twenty'); ?>" class="btn-cta"><?php the_field('button_label_prod_intro_twenty'); ?></a>
+                    </div>
+                </div>
+                <!-- // col  -->                
+
+            </div>
+            <!-- // row  -->
+        </div>
+        <!-- // container  -->
+    </div>
+    <!-- // intro  -->    
 
     <div id="product-features">
         <div class="container">
