@@ -124,4 +124,5 @@ $(document).mouseup(function (e) {
 		}, 500);
 	});
   
+  
 })(jQuery);

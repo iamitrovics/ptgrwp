@@ -113,30 +113,13 @@ get_header();
         </div>
         <!-- // container  -->
     </div>
-    <!-- // contact page  -->    
-
+    <!-- // contact page  -->  
+    
     <section id="contact-info">
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-3 col-sm-6">
-                    <div class="contact-card">
-                        <div class="info-header">
-                            <div class="icon">
-                                <img src="<?php the_field('icon_address_contact'); ?>" alt="">
-                            </div>
-                            <span class="label"><?php the_field('title_address_contact'); ?></span>
-                        </div>
-                        <!-- // icon  -->
-                        <div class="contact-text">
-                            <span class="title"><a target="_blank" href="<?php the_field('link_to_google_map'); ?>"><?php the_field('address_contact_page'); ?></a></span>
-                        </div>
-                        <!-- // tedt  -->
-                    </div>  
-                </div>
-                <!-- // ard  -->
-
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-md-4">
                     <div class="contact-card">
                         <div class="info-header">
                             <div class="icon">
@@ -153,7 +136,7 @@ get_header();
                 </div>
                 <!-- // ard  -->   
                 
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-md-4">
                     <div class="contact-card">
                         <div class="info-header">
                             <div class="icon">
@@ -170,7 +153,7 @@ get_header();
                 </div>
                 <!-- // ard  -->                 
                 
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-md-4">
                     <div class="contact-card">
                         <div class="info-header">
                             <div class="icon">
@@ -193,6 +176,10 @@ get_header();
         <!-- // container  -->
     </section>
     <!-- // contact info  -->
+
+    <div id="map-holder">
+        <?php echo do_shortcode('[wpgmza id="1"]'); ?>
+    </div>    
 
 <?php get_footer(); ?>
 
